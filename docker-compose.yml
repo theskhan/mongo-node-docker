@@ -16,6 +16,8 @@ web:
     - "./src/web:/usr/src/app" 
   ports: 
     - "9000:9000" 
+  links: 
+    - mongo 
 api: 
   build: config/api 
   volumes: 

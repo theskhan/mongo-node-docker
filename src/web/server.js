@@ -2,7 +2,7 @@
 
 const express = require('express');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://192.168.99.100:27111/peoples');
+mongoose.connect('mongodb://mongo:27017/peoples');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
