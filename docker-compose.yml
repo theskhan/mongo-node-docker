@@ -1,0 +1,24 @@
+mongodata: 
+  image: mongo 
+  volumes: 
+    - /data/db 
+  command: --break-mongo 
+mongo: 
+  image: mongo 
+  volumes_from: 
+    - mongodata  
+  ports: 
+    - "27111:27017" 
+  restart: always 
+web: 
+  build: config/web 
+  volumes: 
+    - "./src/web:/usr/src/app" 
+  ports: 
+    - "9000:9000" 
+api: 
+  build: config/api 
+  volumes: 
+    - "./src/api:/usr/src/app" 
+  ports: 
+    - "9001:9001" 

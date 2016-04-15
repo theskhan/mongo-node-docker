@@ -1,0 +1,24 @@
+Node API
+Node Web Server
+MongoDb
+
+
+1.  DataContainer
+	Setup data container, mount to 
+	ori/data
+2.	Node API
+	ori/api
+3. 	Node Front
+	ori/web
+
+	
+	--- 
+	
+MultiContainer Development:
+https://blog.codeship.com/orchestrate-containers-for-development-with-docker-compose/	
+
+Node.js dev environment in Docker on Windows	
+http://serverfault.com/questions/666149/docker-copy-issue-no-such-file-or-directory
+
+No such file or directory issue on Windows:
+http://serverfault.com/questions/666149/docker-copy-issue-no-such-file-or-directory
